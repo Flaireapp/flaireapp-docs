@@ -2,54 +2,84 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Flaire App",
+  "description": "Flaire is the ultimate platform connecting talented creators with innovative brands. Build partnerships, grow your audience, and create amazing content together.",
   "colors": {
-    "primary": "#FF5E0E",
+    "primary": "#FF7E3E",
     "light": "#FF9E6E",
-    "dark": "#991800"
+    "dark": "#FF5E0E"
   },
   "favicon": "/favicon.svg",
+  "contextual": {
+    "options": [
+      "copy",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
+  },
+  "indexing": "navigable",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Brands",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "brands",
+              "brand-signup",
+              "brand-upgrade"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Brand Workflows",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "brand-workflows/bw1",
+              "brand-workflows/bw2",
+              "brand-workflows/bw3",
+              "brand-workflows/bw4",
+              "brand-workflows/bw5"
+            ]
+          },
+          {
+            "group": "Legal",
+            "pages": [
+              "legal/cookie-policy.mdx",
+              "legal/privacy.mdx",
+              "legal/refund-policy.mdx",
+              "legal/terms.mdx"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Creators",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Get Started",
             "pages": [
-              "api-reference/introduction"
+              "creators",
+              "creator-signup",
+              "creator-upgrade"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": " Creator Workflows",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "creator-workflows/cw1",
+              "creator-workflows/cw2",
+              "creator-workflows/cw3",
+              "creator-workflows/cw4",
+              "creator-workflows/cw5"
+            ]
+          },
+          {
+            "group": "Legal",
+            "pages": [
+              "legal/cookie-policy.mdx",
+              "legal/privacy.mdx",
+              "legal/refund-policy.mdx",
+              "legal/terms.mdx"
             ]
           }
         ]
@@ -58,19 +88,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Mobile",
+          "href": "https://flaireapp.co",
+          "icon": "mobile"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Web",
+          "href": "https://web.flaireapp.co",
+          "icon": "computer"
         }
       ]
     }
@@ -82,22 +107,21 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Email",
         "href": "mailto:flaire@astrivsolutions.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Website",
-      "href": "https://www.flaireapp.co"
+      "label": "Contact Us",
+      "href": "tel:+94767679718"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/flaireapp",
-      "instagram": "https://instagram.com/flaireapp",
-      "youtube": "https://youtube.com/flaireapp",
-      "threads": "https://threads.net/flaireapp"
+      "x": "https://x.com/flaireappco",
+      "instagram": "https://instagram.com/flaireapp.co",
+      "facebook": "https://facebook.com/flaireapp.co"
     }
   }
 }
