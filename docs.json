@@ -50,9 +50,39 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Creators",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "creators",
+              "creator-signup",
+              "creator-upgrade"
+            ]
+          },
+          {
+            "group": " Creator Workflows",
+            "pages": [
+              "creator-workflows/cw1",
+              "creator-workflows/cw2",
+              "creator-workflows/cw3",
+              "creator-workflows/cw4",
+              "creator-workflows/cw5"
+            ]
+          },
+          {
+            "group": "Legal",
+            "pages": [
+              "legal/cookie-policy.mdx",
+              "legal/privacy.mdx",
+              "legal/refund-policy.mdx",
+              "legal/terms.mdx"
+            ]
+          }
+        ]
       }
-      
-      
     ],
     "global": {
       "anchors": [
