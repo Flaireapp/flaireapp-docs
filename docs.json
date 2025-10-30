@@ -10,12 +10,7 @@
   },
   "favicon": "/favicon.svg",
   "contextual": {
-    "options": [
-      "copy",
-      "chatgpt",
-      "claude",
-      "perplexity"
-    ]
+    "options": ["copy", "chatgpt", "claude", "perplexity"]
   },
   "navigation": {
     "tabs": [
@@ -24,11 +19,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": [
-              "brands",
-              "brand-signup",
-              "brand-upgrade"
-            ]
+            "pages": ["brands", "brand-signup", "brand-upgrade"]
           },
           {
             "group": "Brand Workflows",
@@ -43,10 +34,10 @@
           {
             "group": "Legal",
             "pages": [
-              "legal/cookie-policy.mdx",
-              "legal/privacy.mdx",
-              "legal/refund-policy.mdx",
-              "legal/terms.mdx"
+              "legal/terms",
+              "legal/privacy",
+              "legal/refund",
+              "legal/cookie"
             ]
           }
         ]
@@ -56,11 +47,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": [
-              "creators",
-              "creator-signup",
-              "creator-upgrade"
-            ]
+            "pages": ["creators", "creator-signup", "creator-upgrade"]
           },
           {
             "group": " Creator Workflows",
@@ -75,10 +62,10 @@
           {
             "group": "Legal",
             "pages": [
-              "legal/cookie-policy.mdx",
-              "legal/privacy.mdx",
-              "legal/refund-policy.mdx",
-              "legal/terms.mdx"
+              "legal/terms",
+              "legal/privacy",
+              "legal/refund",
+              "legal/cookie"
             ]
           }
         ]
