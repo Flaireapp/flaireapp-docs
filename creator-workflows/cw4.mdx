@@ -1,87 +1,30 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in docs.json defines the pages that go in the navigation menu'
-icon: 'map'
+title: "Track Performance"
+description: "Prove your impact with live analytics"
+icon: "chart-line"
 ---
 
-The navigation menu is the list of links on every website.
+## Overview
+Deliverables in Flaire live inside the same conversation where you negotiated the agreement. The thread keeps everything organized—uploads, approvals, and now the lightweight seven-day analytics tab that turns on once you paste the live link.
 
-You will likely update `docs.json` every time you add a new page. Pages do not show up automatically.
+## Submit the final asset
+1. Upload the finished file directly in the thread (videos up to 200 MB, images up to 25 MB).
+2. Add a short note covering the caption, hashtags, or talking points the brand needs.
+3. Clearly label the message as **Final delivery** so the brand knows this is the version tied to payment.
+4. Once the content is live on your platform, copy the public link and paste it into the same thread. Tag the brand and @FlaireSupport so they’re alerted instantly—this also opens the analytics tab for both of you.
 
-## Navigation syntax
+## After submission
+- The brand has up to three business days to review drafts. You’ll see status badges like *Awaiting review*, *Revision requested*, or *Approved*.
+- After you post and share the live link, Flaire tracks basic analytics (reach, engagement rate, clicks, saves) for seven days. Both you and the brand can refresh the tab anytime.
+- Analytics only appear if both you and the brand connected your social accounts during signup, so make sure your connections stay active.
+- If the brand requests another revision and you still have rounds remaining, upload the updated file in the same thread.
+- Once the brand clicks **Approve**, Flaire releases the remaining payment automatically. If they don’t respond within seven days of you posting the link, the payment releases automatically.
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+## Proof-of-posting
+- Always paste the live link plus any required screenshots so both Flaire and the brand can confirm the content is live.
+- If the link changes (e.g., you need to re-upload), update it immediately—analytics only run on the most recent link.
 
-<CodeGroup>
-
-```json Regular Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json Nested Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "quickstart",
-            {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `docs.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Group Name",
-          "pages": ["your-folder/your-page"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Hidden Pages
-
-MDX files not included in `docs.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+## Keep records for yourself
+- Download the thread as a PDF (coming soon) or copy the key details into your own tracker.
+- Save the receipts emailed by Flaire—they’re the only financial documents generated for the campaign.
+- Screenshot the shared analytics if you want to include performance in your media kit later.

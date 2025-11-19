@@ -1,87 +1,29 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in docs.json defines the pages that go in the navigation menu'
-icon: 'map'
+title: "Payout & Reconcile"
+description: "Release funds, capture invoices, and stay audit-ready"
+icon: "money-bill"
 ---
 
-The navigation menu is the list of links on every website.
+## Overview
+Wrapping a campaign is simple: confirm you received what was promised, release the final payment, and document any notes for future collaborations. Flaire now tracks the live post link and a seven-day analytics snapshot so both sides have the same read before the campaign closes. Receipts are still emailed after each payment for your records.
 
-You will likely update `docs.json` every time you add a new page. Pages do not show up automatically.
+## Release flow
+1. **Creator submits final content and the live link** in the campaign thread, tagging you and Flaire support.
+2. **Analytics tab opens** automatically and refreshes for seven days so both parties can watch performance.
+3. **You approve or decline** within that window. Approval releases the remaining payment immediately.
+4. **Auto-release safety net:** If you take no action within seven days of the creator posting, Flaire releases the final payment automatically (as long as the post link is still valid).
+5. **Flaire emails two receipts**—one for the advance (already paid) and one for the final release—so finance can reconcile.
 
-## Navigation syntax
+## If something is off
+- Use **Request revision** if you still have revision rounds available.
+- If the deliverable misses the mark entirely, reply with **Open dispute**. Provide the campaign link, agreement summary, and a clear description of the issue. Flaire mediates within five business days.
+- When you and the creator choose to change scope, end the campaign and launch a new negotiation so payments stay accurate.
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+## Keep your records tidy
+- Star the campaign thread in Flaire so you can find it when planning follow-up collaborations.
+- Download shared files locally; once a campaign is closed, files remain accessible but are not versioned.
+- Forward receipts to your accounting inbox or upload them to your finance stack—there are no exports or APIs today.
 
-<CodeGroup>
-
-```json Regular Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json Nested Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "quickstart",
-            {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `docs.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Group Name",
-          "pages": ["your-folder/your-page"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Hidden Pages
-
-MDX files not included in `docs.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+## Feedback loop
+- Share a short testimonial or constructive feedback with the creator when you close the campaign. It helps them adjust their future agreements.
+- Save the analytics snapshot (CSV download coming soon) or screenshot it for your internal recap so your next brief reflects what worked.
