@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Flaire App",
-  "description": "Flaire is the ultimate platform connecting talented creators with innovative brands. Build partnerships, grow your audience, and create amazing content together.",
+  "description": "Product docs for Flaire, the marketplace where verified brands post campaigns and creators apply with transparent agreements.",
   "colors": {
     "primary": "#FF7E3E",
     "light": "#FF9E6E",

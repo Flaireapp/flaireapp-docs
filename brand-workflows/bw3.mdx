@@ -1,88 +1,31 @@
 ---
-title: 'Markdown Syntax'
-description: 'Text, title, and styling in standard markdown'
-icon: 'text-size'
+title: "Review & Approve Content"
+description: "Keep feedback loops tight and audit-ready"
+icon: "check"
 ---
 
-## Titles
+## Overview
+Approvals in Flaire are binary: you either accept the creator’s agreement and pay, or you ask for edits until you are comfortable funding the work. There are no external contracts or tools. Once you approve, the payment moves immediately and the creator begins production.
 
-Best used for section headers.
+## Negotiation loop
+1. **Review the agreement** the creator submitted (advance, final amount, revisions, date, notes).
+2. **Request edits** if you need different numbers. Flaire keeps the thread tidy by showing each revision so it is clear what changed.
+3. **Accept** when everything looks right. You will see the total charge and be prompted to pay.
 
-```md
-## Titles
-```
+## Payment flow
+| Step | What happens |
+| --- | --- |
+| Approve & pay | Your saved card/bank is charged for the full amount (advance + final). |
+| Release advance | Flaire automatically sends the advance to the creator so they can start production. |
+| Hold remainder | The final payment remains reserved until you mark the deliverable as received. |
 
-### Subtitles
+## If you disagree
+- Use **Request changes** to propose new amounts or a new delivery date.
+- Share specific feedback so the creator knows exactly what to update.
+- You can back out entirely by choosing **Decline**; funds are not captured unless you approve.
 
-Best use to subsection headers.
-
-```md
-### Subtitles
-```
-
-<Tip>
-
-Each **title** and **subtitle** creates an anchor and also shows up on the table of contents on the right.
-
-</Tip>
-
-## Text Formatting
-
-We support most markdown formatting. Simply add `**`, `_`, or `~` around text to format it.
-
-| Style         | How to write it   | Result          |
-| ------------- | ----------------- | --------------- |
-| Bold          | `**bold**`        | **bold**        |
-| Italic        | `_italic_`        | _italic_        |
-| Strikethrough | `~strikethrough~` | ~strikethrough~ |
-
-You can combine these. For example, write `**_bold and italic_**` to get **_bold and italic_** text.
-
-You need to use HTML to write superscript and subscript text. That is, add `<sup>` or `<sub>` around your text.
-
-| Text Size   | How to write it          | Result                 |
-| ----------- | ------------------------ | ---------------------- |
-| Superscript | `<sup>superscript</sup>` | <sup>superscript</sup> |
-| Subscript   | `<sub>subscript</sub>`   | <sub>subscript</sub>   |
-
-## Linking to Pages
-
-You can add a link by wrapping text in `[]()`. You would write `[link to google](https://google.com)` to [link to google](https://google.com).
-
-Links to pages in your docs need to be root-relative. Basically, you should include the entire folder path. For example, `[link to text](/writing-content/text)` links to the page "Text" in our components section.
-
-Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
-
-## Blockquotes
-
-### Singleline
-
-To create a blockquote, add a `>` in front of a paragraph.
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
-```
-
-### Multiline
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-```
-
-### LaTeX
-
-Mintlify supports [LaTeX](https://www.latex-project.org) through the Latex component.
-
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-
-```md
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-```
+## After approval
+- The campaign status switches to *In production*.
+- You receive reminders seven days and one day before the agreed deliverable date.
+- The creator cannot change payment terms without opening a new negotiation thread.
+- When the creator posts, they tag you and Flaire with the live link so analytics can start and the final payment timer can begin.

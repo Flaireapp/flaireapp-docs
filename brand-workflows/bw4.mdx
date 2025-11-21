@@ -1,87 +1,32 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in docs.json defines the pages that go in the navigation menu'
-icon: 'map'
+title: "Measure Campaign Impact"
+description: "Attribute every conversion back to a creator touchpoint"
+icon: "chart-column"
 ---
 
-The navigation menu is the list of links on every website.
+## Overview
+After you approve and pay, production lives inside a single message thread. When the creator posts the content, they paste the live link back into Flaire so both of you can see a lightweight analytics panel (reach, engagement rate, saves, clicks) pulled from the platform APIs. This keeps performance data tied to the agreement without needing separate dashboards.
 
-You will likely update `docs.json` every time you add a new page. Pages do not show up automatically.
+## Track the deliverable
+- The promised date appears at the top of the thread along with a countdown.
+- If the creator anticipates a delay, they must request a new date in the same thread so the change is recorded.
+- You can nudge the creator with **Send reminder** once every 24 hours.
 
-## Navigation syntax
+## Manage revisions
+| Scenario | What to do |
+| --- | --- |
+| Draft looks good | Reply with **Approved** so the creator can move on. |
+| Changes needed | Reply with **Request revision** and describe what to adjust. Flaire increments the revision counter automatically. |
+| Revision cap hit | Decide whether to pay for an extra revision or close the campaign; extra work requires a new agreement. |
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+## File handling
+- Creators upload drafts directly in the thread (max 200 MB). Download and review them locally.
+- Use the notes field to keep track of final copy, hashtags, or posting instructions—you will see these during wrap-up.
+- After the creator posts, they paste the live link plus any supporting screenshots. Flaire automatically notifies your team (and support) and begins pulling analytics for the next seven days so you and the creator share the same view.
+- Analytics require both the brand and creator to have at least one connected social account. If metrics are missing, refresh those connections from **Settings → Connected apps**.
 
-<CodeGroup>
-
-```json Regular Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json Nested Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "quickstart",
-            {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `docs.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Group Name",
-          "pages": ["your-folder/your-page"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Hidden Pages
-
-MDX files not included in `docs.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+## Staying aligned
+- Confirm receipt of physical products or talking points before the creator starts filming.
+- Keep decisions inside Flaire so support can help if something goes off track.
+- If you and the creator mutually decide to change payment amounts mid-production, end the campaign and start a new negotiation so the updated terms are documented.
+- When analytics look off, double-check that the creator provided the correct link; replacing it refreshes the snapshot for both sides.
