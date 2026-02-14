@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "Flaire App",
-  "description": "Flaire is the ultimate platform connecting talented creators with innovative brands. Build partnerships, grow your audience, and create amazing content together.",
+  "description": "Product docs for Flaire, the marketplace where verified brands post campaigns and creators apply with transparent agreements.",
   "colors": {
     "primary": "#FF7E3E",
     "light": "#FF9E6E",
@@ -19,7 +19,9 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["brands", "brand-signup", "brand-upgrade"]
+            "pages": ["brands", "brand-signup", "brand-instagram",
+              "brand-tiktok",
+              "brand-youtube"]
           },
           {
             "group": "Brand Workflows",
@@ -27,8 +29,7 @@
               "brand-workflows/bw1",
               "brand-workflows/bw2",
               "brand-workflows/bw3",
-              "brand-workflows/bw4",
-              "brand-workflows/bw5"
+              "brand-workflows/bw4"
             ]
           },
           {
@@ -47,7 +48,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["creators", "creator-signup", "creator-upgrade"]
+            "pages": ["creators", "creator-signup", "creator-instagram", "creator-tiktok", "creator-youtube"]
           },
           {
             "group": " Creator Workflows",
@@ -105,9 +106,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/flaireappco",
-      "instagram": "https://instagram.com/flaireapp.co",
-      "facebook": "https://facebook.com/flaireapp.co"
+            "instagram": "https://www.instagram.com/flaireapp.co/",
+            "website": "https://flaireapp.co"
     }
   }
 }

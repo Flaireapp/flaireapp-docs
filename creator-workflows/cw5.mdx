@@ -1,87 +1,34 @@
 ---
-title: 'Navigation'
-description: 'The navigation field in docs.json defines the pages that go in the navigation menu'
-icon: 'map'
+title: "Get Paid Fast"
+description: "Understand escrow, payouts, and financial tools"
+icon: "wallet"
+iconType: "solid"
 ---
 
-The navigation menu is the list of links on every website.
+## Overview
+Flaire processes two payments per campaign: an optional advance that lands right after approval and the remaining balance that arrives once the brand signs off on your final delivery. There is no wallet to manage—funds go straight to the payout method you verified during signup.
 
-You will likely update `docs.json` every time you add a new page. Pages do not show up automatically.
+## Payment lifecycle
+| Stage | What you see | What happens |
+| --- | --- | --- |
+| Agreement approved | Status changes to **Approved & paid** | Advance (if requested) transfers to your payout method. |
+| Production | Status shows **In production** | Flaire holds the final payment until you deliver and the brand approves. |
+| Link submitted | Status switches to **Posted** | Flaire opens a seven-day analytics window and starts the auto-release timer. |
+| Final approval / auto-release | Status switches to **Complete** | Remaining balance releases either when the brand approves or automatically seven days after your link submission if they stay silent. |
 
-## Navigation syntax
+## Keep payments smooth
+- Double-check your payout details before you apply. Changing accounts mid-campaign pauses releases until support re-verifies you.
+- Request only the advance you need for production. Brands see the split and expect you to honor it.
+- Deliver on or before the date you agreed to. If you need more time, propose a new date inside the thread so the brand can approve it.
+- Paste the live link right after you post and tag the brand plus Flaire. The auto-release timer doesn’t start until the link is captured.
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+## Tracking receipts
+- Flaire emails a receipt each time money moves. Save those emails or forward them to your accountant.
+- You can also download a PDF copy from **Settings → Payment history** (Coming soon).
 
-<CodeGroup>
+## When something feels off
+- If a release is late, confirm the brand actually clicked **Approve** or whether seven days have passed since you posted the link.
+- Still waiting? Contact [support@flaireapp.co](mailto:support@flaireapp.co) with the campaign link and we'll investigate within one business day.
 
-```json Regular Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json Nested Navigation
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "quickstart",
-            {
-              "group": "Nested Reference Pages",
-              "pages": ["nested-reference-page"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `docs.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": {
-  "tabs": [
-    {
-      "tab": "Docs",
-      "groups": [
-        {
-          "group": "Group Name",
-          "pages": ["your-folder/your-page"]
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Hidden Pages
-
-MDX files not included in `docs.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+## If you get stuck
+- Reach us through email at [support@flaireapp.co](mailto:support@flaireapp.co). Include screenshots so we can troubleshoot quickly.
